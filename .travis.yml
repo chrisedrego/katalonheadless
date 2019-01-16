@@ -14,7 +14,7 @@ before_install:
 - unzip chromedriver_linux64.zip
 - sudo mv chromedriver /usr/bin
 # Issues with the Older Version of Pip,Installing Latest Version
-- python -m pip install --upgrade pip
+- sudo python -m pip install --upgrade pip
 - python --version
 - sudo pip install selenium
 # Checking the installed Packages
