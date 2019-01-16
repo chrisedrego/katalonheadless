@@ -17,6 +17,7 @@ before_install:
 - sudo python -m pip install --upgrade pip
 - python --version
 - sudo pip install selenium
+- sudo pip install --upgrade --ignore-installed urllib3
 # Checking the installed Packages
 - whereis google-chrome-stable
 - whereis chromedriver
