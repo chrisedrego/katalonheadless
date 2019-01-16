@@ -13,8 +13,7 @@ before_install:
 - wget http://chromedriver.storage.googleapis.com/71.0.3578.80/chromedriver_linux64.zip
 - unzip chromedriver_linux64.zip
 - sudo mv chromedriver /usr/bin
-- pip install selenium
-
+- sudo pip install selenium
 
 script:
 - python ./scripts/TestSFDX.py
