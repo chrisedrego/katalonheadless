@@ -13,7 +13,13 @@ before_install:
 - wget http://chromedriver.storage.googleapis.com/71.0.3578.80/chromedriver_linux64.zip
 - unzip chromedriver_linux64.zip
 - sudo mv chromedriver /usr/bin
+# Issues with the Older Version of Pip,Installing Latest Version
+- python -m pip install --upgrade pip
+- python --version
 - sudo pip install selenium
+# Checking the installed Packages
+- whereis google-chrome-stable
+- whereis chromedriver
 
 script:
 - python ./scripts/TestSFDX.py
