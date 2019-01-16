@@ -23,4 +23,4 @@ before_install:
 - whereis chromedriver
 
 script:
-- python ./scripts/TestSFDX.py
+- python ./scripts/katalon_script.py
